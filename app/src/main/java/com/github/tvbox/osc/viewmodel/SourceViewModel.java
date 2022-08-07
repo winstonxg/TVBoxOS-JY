@@ -142,7 +142,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -190,7 +190,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -261,7 +261,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -306,7 +306,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -386,7 +386,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -447,7 +447,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -495,7 +495,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -529,7 +529,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -573,7 +573,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -607,7 +607,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -682,7 +682,7 @@ public class SourceViewModel extends ViewModel {
                             if (response.body() != null) {
                                 return response.body().string();
                             } else {
-                                throw new IllegalStateException("网络请求错误");
+                                throw new IllegalStateException("鄂醍ｻ懆ｯｷ豎る漠隸ｯ");
                             }
                         }
 
@@ -768,7 +768,7 @@ public class SourceViewModel extends ViewModel {
 
     private AbsSortXml sortXml(MutableLiveData<AbsSortXml> result, String xml) {
         try {
-            XStream xstream = new XStream(new DomDriver());//创建Xstram对象
+            XStream xstream = new XStream(new DomDriver());//蛻帛ｻｺXstram蟇ｹ雎｡
             xstream.autodetectAnnotations(true);
             xstream.processAnnotations(AbsSortXml.class);
             xstream.ignoreUnknownElements();
@@ -874,7 +874,7 @@ public class SourceViewModel extends ViewModel {
 
     private AbsXml xml(MutableLiveData<AbsXml> result, String xml, String sourceKey) {
         try {
-            XStream xstream = new XStream(new DomDriver());//创建Xstram对象
+            XStream xstream = new XStream(new DomDriver());//蛻帛ｻｺXstram蟇ｹ雎｡
             xstream.autodetectAnnotations(true);
             xstream.processAnnotations(AbsXml.class);
             xstream.ignoreUnknownElements();
@@ -912,20 +912,20 @@ public class SourceViewModel extends ViewModel {
 
     private AbsXml json(MutableLiveData<AbsXml> result, String json, String sourceKey) {
         try {
-            // 测试数据
+            // 豬玖ｯ墓焚謐ｮ
             /*json = "{\n" +
                     "\t\"list\": [{\n" +
                     "\t\t\"vod_id\": \"137133\",\n" +
-                    "\t\t\"vod_name\": \"磁力测试\",\n" +
+                    "\t\t\"vod_name\": \"逎∝鴨豬玖ｯ表",\n" +
                     "\t\t\"vod_pic\": \"https:/img9.doubanio.com/view/photo/s_ratio_poster/public/p2656327176.webp\",\n" +
-                    "\t\t\"type_name\": \"剧情 / 爱情 / 古装\",\n" +
+                    "\t\t\"type_name\": \"蜑ｧ諠 / 辷ｱ諠 / 蜿､陬�",\n" +
                     "\t\t\"vod_year\": \"2022\",\n" +
-                    "\t\t\"vod_area\": \"中国大陆\",\n" +
-                    "\t\t\"vod_remarks\": \"40集全\",\n" +
-                    "\t\t\"vod_actor\": \"刘亦菲\",\n" +
-                    "\t\t\"vod_director\": \"杨阳\",\n" +
-                    "\t\t\"vod_content\": \"　　在钱塘开茶铺的赵盼儿（刘亦菲 饰）惊闻未婚夫、新科探花欧阳旭（徐海乔 饰）要另娶当朝高官之女，不甘命运的她誓要上京讨个公道。在途中她遇到了出自权门但生性正直的皇城司指挥顾千帆（陈�?饰），并卷入江南一场大案，两人不打不相识从而结缘。赵盼儿凭借智慧解救了被骗婚而惨遭虐待的“江南第一琵琶高手”宋引章（林�?饰）与被苛刻家人逼得离家出走的豪爽厨娘孙三娘（柳�?饰），三位姐妹从此结伴同行，终抵汴京，见识世间繁华。为了不被另攀高枝的欧阳旭从东京赶走，赵盼儿与宋引章、孙三娘一起历经艰辛，将小小茶坊一步步发展为汴京最大的酒楼，揭露了负心人的真面目，收获了各自的真挚感情和人生感悟，也为无数平凡女子推开了一扇平等救赎之门。\",\n" +
-                    "\t\t\"vod_play_from\": \"磁力测试\",\n" +
+                    "\t\t\"vod_area\": \"荳ｭ蝗ｽ螟ｧ髯�",\n" +
+                    "\t\t\"vod_remarks\": \"40髮��\",\n" +
+                    "\t\t\"vod_actor\": \"蛻倅ｺｦ闖ｲ\",\n" +
+                    "\t\t\"vod_director\": \"譚ｨ髦ｳ\",\n" +
+                    "\t\t\"vod_content\": \"縲縲蝨ｨ髓ｱ蝪伜ｼ闌ｶ體ｺ逧�ｵｵ逶ｼ蜆ｿ�亥�莠ｦ闖ｲ 鬣ｰ�画リ髣ｻ譛ｪ蟀壼､ｫ縲∵眠遘第爾闃ｱ谺ｧ髦ｳ譌ｭ�亥ｾ先ｵｷ荵 鬣ｰ�芽ｦ∝嘗螽ｶ蠖捺悃鬮伜ｮ倅ｹ句･ｳ�御ｸ咲曝蜻ｽ霑千噪螂ｹ隱楢ｦ∽ｸ贋ｺｬ隶ｨ荳ｪ蜈ｬ驕薙ょ惠騾比ｸｭ螂ｹ驕�芦莠��閾ｪ譚�葎菴�函諤ｧ豁｣逶ｴ逧�嚊蝓主昇謖�硯鬘ｾ蜊�ｸ�ｼ磯刪譎?鬣ｰ�会ｼ悟ｹｶ蜊ｷ蜈･豎溷漉荳蝨ｺ螟ｧ譯茨ｼ御ｸ､莠ｺ荳肴遠荳咲嶌隸�ｻ手檎ｻ鍋ｼ倥りｵｵ逶ｼ蜆ｿ蜃ｭ蛟滓匱諷ｧ隗｣謨台ｺ�｢ｫ鬪怜ｩ夊梧Κ驕ｭ陌仙ｾ�噪窶懈ｱ溷漉隨ｬ荳逅ｵ逅ｶ鬮俶焔窶晏ｮ句ｼ慕ｫ�域棊蜈?鬣ｰ�我ｸ手｢ｫ闍帛綾螳ｶ莠ｺ騾ｼ蠕礼ｦｻ螳ｶ蜃ｺ襍ｰ逧�ｱｪ辷ｽ蜴ｨ螽伜ｭ吩ｸ牙ｨ假ｼ域浹蟯?鬣ｰ�会ｼ御ｸ我ｽ榊ｧ仙ｦｹ莉取ｭ､扈謎ｼｴ蜷瑚｡鯉ｼ檎ｻ域慣豎ｴ莠ｬ�瑚ｧ∬ｯ�ｸ夜龍郢∝克縲ゆｸｺ莠�ｸ崎｢ｫ蜿ｦ謾鬮俶椌逧�ｬｧ髦ｳ譌ｭ莉惹ｸ應ｺｬ襍ｶ襍ｰ�瑚ｵｵ逶ｼ蜆ｿ荳主ｮ句ｼ慕ｫ縲∝ｭ吩ｸ牙ｨ倅ｸ襍ｷ蜴�ｻ剰臆霎幢ｼ悟ｰ�ｰ丞ｰ剰幻蝮贋ｸ豁･豁･蜿大ｱ穂ｸｺ豎ｴ莠ｬ譛螟ｧ逧��讌ｼ�梧少髴ｲ莠�ｴ溷ｿ�ｺｺ逧�悄髱｢逶ｮ�梧噺闔ｷ莠�推閾ｪ逧�悄謖壽─諠�柱莠ｺ逕滓─謔滂ｼ御ｹ滉ｸｺ譌謨ｰ蟷ｳ蜃｡螂ｳ蟄先耳蠑莠�ｸ謇�ｹｳ遲画舞襍惹ｹ矩葎縲�",\n" +
+                    "\t\t\"vod_play_from\": \"逎∝鴨豬玖ｯ表",\n" +
                     "\t\t\"vod_play_url\": \"0$magnet:?xt=urn:btih:9e9358b946c427962533472efdd2efd9e9e38c67&dn=%e9%98%b3%e5%85%89%e7%94%b5%e5%bd%b1www.ygdy8.com.%e7%83%ad%e8%a1%80.2022.BD.1080P.%e9%9f%a9%e8%af%ad%e4%b8%ad%e8%8b%b1%e5%8f%8c%e5%ad%97.mkv&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce\"\n" +
                     "\t}]\n" +
                     "}";*/
