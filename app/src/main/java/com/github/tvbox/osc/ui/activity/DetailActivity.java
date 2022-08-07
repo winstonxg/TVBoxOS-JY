@@ -320,8 +320,8 @@ public class DetailActivity extends BaseActivity {
                     seriesAdapter.getData().get(vodInfo.playIndex).selected = true;
                     seriesAdapter.notifyItemChanged(vodInfo.playIndex);
                     //选集全屏 想选集不全屏的注释下面一行
-                    if (showPreview && !fullWindows) toggleFullPreview();
-                    if (!showPreview || reload) jumpToPlay();
+                    //if (showPreview && !fullWindows) toggleFullPreview();
+                    //if (!showPreview || reload) jumpToPlay();
                 }
             }
         });
